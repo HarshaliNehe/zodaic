@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zodiac</title>
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="ras.css">
+</head>
+<body>
+  <div class="container">
+          <div class="nav">
+                 <h1> What's your sign
+                 </h1>
+          </div>
+                   <div class="nav__form">
+                         <h1>WHAT'S YOUR HOROSCOPE </h1>
+                                  <form class="nav__form1">
+
+                                      <fieldset>
+                                            <legend>Horoscope</legend><br><br>
+                                               <label>Enter day:</label>
+                                                    <select input type="" id="day" name="day">
+                                                         <option>0</option>
+                                                         <option>1</option>       
+                                                         <option>2</option>       
+                                                         <option>3</option>       
+                                                         <option>4</option>       
+                                                         <option>5</option>       
+                                                         <option>6</option>       
+                                                         <option>7</option>       
+                                                         <option>8</option>       
+                                                         <option>9</option>       
+                                                        <option>10</option>       
+                                                       <option>11</option>       
+                                                       <option>12</option>       
+                                                       <option>13</option>       
+                                                       <option>14</option>       
+                                                       <option>15</option>       
+                                                       <option>16</option>       
+                                                       <option>17</option>       
+                                                       <option>18</option>       
+                                                       <option>19</option>       
+                                                       <option>20</option>       
+                                                       <option>21</option>       
+                                                       <option>22</option>       
+                                                       <option>23</option>       
+                                                       <option>24</option>       
+                                                       <option>25</option>       
+                                                       <option>26</option>       
+                                                       <option>27</option>       
+                                                       <option>28</option>       
+                                                       <option>29</option>       
+                                                       <option>30</option>       
+                                                       <option>31</option>       
+                                           </select> 
+                                             <br><br>
+   Enter month:
+
+     <select input type="" id="month" name="month">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+    </select>
+
+        <br><br>
+
+
+                <a class="submit" href="javascript: validate()">SUBMIT</a><br><br>
+
+
+                   <div id="zodiac-name"></div>
+
+                             <br><br>
+
+         </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+<script>
+
+
+  function validate() 
+
+  {
+
+
+  var day = document.getElementById("day").value; 
+  var month = document.getElementById("month").value;
+
+  if((day>31 || day<1)&&(month>12 || month<1))
+  {
+
+    alert('Invalid Date and Month');
+
+  }
+  
+  var horo;
+  var msg;
+
+  if((month==1 && (day>=20 && day<=31))||(month==2 && (day>=1 && day<=18)))
+  {
+      horo="1";
+  }
+  else if((month==2 && (day>=19 && day<=28))||(month==3 && (day>=1 && day<=20)))
+  {
+      horo="2";
+  }
+  else if((month==3 && (day>=21 && day<=31))||(month==4 && (day>=1 && day<=19)))
+  {
+      horo="3";
+  }
+  else if((month==4 && (day>=20 && day<=30))||(month==5 && (day>=1 && day<=20)))
+  {
+      horo="4";
+  }
+  else if((month==5 && (day>=21 && day<=31))||(month==6 && (day>=1 && day<=20)))
+  {
+      horo="5";
+  }
+  else if((month==6 && (day>=21 && day<=30))||(month==7 && (day>=1 && day<=22)))
+  {
+      horo="6";
+  }
+  else if((month==7 && (day>=23 && day<=31))||(month==8 && (day>=1 && day<=22)))
+  {
+      horo="7";
+  }
+  else if((month==8 && (day>=23 && day<=31))||(month==9 && (day>=1 && day<=22)))
+  {
+      horo="8";
+  }
+  else if((month==9 && (day>=23 && day<=30))||(month==10 && (day>=1 && day<=22)))
+  {
+      horo="9";
+  }
+  else if((month==10 && (day>=23 && day<=31))||(month==11 && (day>=1 && day<=21)))
+  {
+      horo="10";
+  }
+  else if((month==11 && (day>=22 && day<=30))||(month==12 && (day>=1 && day<=21)))
+  {
+      horo="11";
+  }
+  else if((month==12 && (day>=22 && day<=31))||(month==1 && (day>=1 && day<=19)))
+  {
+      horo="12";
+  }
+  else
+  {
+    msg="Sorry unable to give you information";
+  }
+
+
+
+switch(horo)
+  {
+
+    case "1":
+              alert(" your horoscope is:Aquarius");
+      break;
+
+    case "2":
+         alert(" your horoscope is:Pisces");
+      break;
+
+    case "3":
+      alert(" your horoscope is:Aries");
+      break;
+
+    case"4":
+      alert(" your horoscope is:Taurus");
+      break;
+
+    case "5":
+      
+alert(" your horoscope is:Gemini");
+      break;
+    case "6":
+      alert(" your horoscope is:Cancer");
+      break;
+
+    case "7":
+    alert(" your horoscope is:Leo");
+      break;
+      
+
+    case "8":
+      alert(" your horoscope is:Virgos");
+      break;
+    case "9":
+      alert(" your horoscope is:Libra");
+      break;
+
+    case "10":
+      
+alert(" your horoscope is:Scorpio");
+      break;
+    case "11":
+
+      alert(" your horoscope is:Sagittarius");
+      break;
+    case "12":
+
+    alert(" your horoscope is:Capricorn");
+      break;
+
+      default:
+      alert("Please choose correct case");
+      break;
+      
+  }
+
+
+   document.getElementById("zodiac-name").innerHTML =msg;
+  }
+
+
+</script>
+
+</body>
+</html>

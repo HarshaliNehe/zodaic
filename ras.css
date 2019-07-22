@@ -1,0 +1,92 @@
+body {
+
+	background-image: url('/home/pif/Desktop/javascript assignments/rainfall.jpg');
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.container {
+
+	display: grid;
+	grid-template-rows: .4fr 1fr;
+	height:100vh;
+}
+
+.nav {
+	float:right;
+	background-image: url("/home/pif/Desktop/javascript assignments/horoscope.jpg");
+	background-size: cover;
+	background-position: center;
+
+}
+
+.nav h1{
+	float: center;
+
+	color: white;
+	text-decoration: none;
+	text-align: center;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+	
+}
+
+.nav__form {
+	display: grid;
+	grid-template-rows: .4fr auto;
+}
+
+h1 {
+	margin-bottom: 50px;
+	text-align: center;
+	color:white;
+}
+
+.nav__form {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav__form1 select {
+	margin-bottom: 10px;
+	padding: 20px ;
+    background-color: #38867;
+    border: none;
+    border-radius: 150px;
+}
+
+.submit {
+    background-color:red;
+    padding: 10px 40px;
+    border-radius: 150px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit:hover {
+	background-color: #962f4d;
+}
+
+label {
+	font-size: 16px
+}
+
+#zodiac-name {
+	padding: 50px 100px	;
+	text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+	.container {
+		grid-template-columns: 1fr 1.5fr;
+		grid-template-rows: auto;
+	}
+	h1 {
+		margin-bottom: 100px;
+	}
+}
